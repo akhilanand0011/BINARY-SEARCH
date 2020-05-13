@@ -1,6 +1,6 @@
 https://leetcode.com/explore/learn/card/binary-search/126/template-ii/948/
 think with this example 1231
-
+//main problem is with first and last element [l,r)
 
 class Solution {
 public:
