@@ -34,6 +34,24 @@ public:
 };
 
 
+
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        if(nums.size()==1) return 0;
+        int l=-1;
+        int r=nums.size()-1;
+        while(r-l>1){
+            int mid=l+(r-l)/2; 
+            cout<<l<<" "<<r<<endl;
+            if(nums[mid]>nums[mid+1]) r=mid; 
+            else l=mid;  
+        }
+        return r;
+    }
+};
+
+
 class Solution {
 public:
     int findPeakElement(vector<int>& nums) {
